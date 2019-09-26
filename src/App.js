@@ -7,13 +7,14 @@ class App extends Component {
   state = {
     circleColor: 'red',
     backgroundColor: 'blue',
-    statement: "a Texas based Creative Developer & Generalist"
+    statement: "a Texas based  Software Engineer & Creative Generalist",
+    statementNo: '1'
    }
   render() { 
     return ( 
       <div className="App">
         <section>
-          <div className="circle"/>
+          <div className={this.state}/>
           <h1>Gideon Ibemere, Jr is...</h1>
           <Statement statement={this.state.statement} />
         </section>

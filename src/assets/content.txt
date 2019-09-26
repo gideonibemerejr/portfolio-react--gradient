@@ -10,9 +10,15 @@ Circle size: 20px by 20px
 
 H1 copy: Gideon Ibemere, Jr is...
 
+
+Colors - 
+Orange: #F2994A
+Violet: #9B51E0
+Green: #A5CF6F
+
 Statment 1 –
-Background: white
-Circle: gradient
+Background: White
+Circle: All
 Copy: a Texas based Creative Developer & Generalist
 
 Slide 2 –
