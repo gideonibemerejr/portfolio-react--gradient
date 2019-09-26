@@ -4,10 +4,12 @@ body {
 
   font-size: 16px;
   line-height: 1.25;
-  background-color: #fff;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(-180deg, #fff, rgba(255, 255, 255, 0));
   color: #000;
   margin: 40px auto 40px auto;
   width: 620px;
+  height: 100vh;
 }
 
 h1 {
@@ -17,16 +19,61 @@ h1 {
 h2 {
   font-size: 8vmin;
 }
-.circle .all {
-  border-radius: 50px;
-  border-right-color: orange;
-  border-top-color: #000;
-  border-bottom-color: ;
-  border-left-color: #9b51e0;
-  border-width: 50px;
-  border-style: solid;
-  height: 0px;
-  width: 0px;
-}
+
 .circle {
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 1s;
+  background-color: #999;
+}
+
+.circle.Home {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #000, #000 100%),
+    linear-gradient(135deg, #a5cf6f, #a5cf6f),
+    linear-gradient(225deg, #9b51e0, #9b51e0),
+    linear-gradient(225deg, #f2994a, #f2994a);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.circle.Art {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 1s;
+  background-color: #000;
+}
+.circle.Sustainability {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 1s;
+  background-color: #a5cf6f;
+}
+.circle.Music {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 1s;
+  background-color: #f2994a;
+}
+.circle.Digital {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color 1s;
+  background-color: #9b51e0;
 }

@@ -5,17 +5,15 @@ import './App.css';
 
 class App extends Component {
   state = {
-    circleColor: 'red',
-    backgroundColor: 'blue',
-    statement: "a Texas based  Software Engineer & Creative Generalist",
-    statementNo: '1'
+    statement: "is a Texas based  Software Engineer & Creative Generalist",
+    page: 'Home'
    }
   render() { 
     return ( 
       <div className="App">
         <section>
-          <div className={this.state}/>
-          <h1>Gideon Ibemere, Jr is...</h1>
+          <div className={`circle ${this.state.page}`}>{this.state.page === 'Home' ? null : this.state.page.slice(0,1)}</div>
+          <h1>Gideon Ibemere, Jr–––</h1>
           <Statement statement={this.state.statement} />
         </section>
         <Footer />
