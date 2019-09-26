@@ -5,7 +5,7 @@ import './App.css';
 
 class App extends Component {
   state = {
-    statement: "is a Texas based  Software Engineer & Creative Generalist",
+    statement: `is a Texas based \nSoftware Engineer & Creative Generalist`,
     page: 'Home'
    }
   render() { 
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <section>
           <div className={`circle ${this.state.page}`}>{this.state.page === 'Home' ? null : this.state.page.slice(0,1)}</div>
-          <h1>Gideon Ibemere, Jr–––</h1>
+          <h1>Gideon Ibemere, Jr</h1>
           <Statement statement={this.state.statement} />
         </section>
         <Footer />

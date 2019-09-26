@@ -1,5 +1,6 @@
 import React from 'react';
-import ButtonGroup from '../Components/ButtonGroup'
+import ButtonGroup from '../../Components/ButtonGroup'
+import './footer.css'
 
 const Footer = () => {
     return (<footer>
