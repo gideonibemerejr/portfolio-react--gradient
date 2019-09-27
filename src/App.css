@@ -54,6 +54,9 @@ section div.circle {
   border-radius: 50%;
   transition: background-color 1s;
   background-color: #999;
+  animation: spin 4000ms linear infinite;
+  -webkit-animation: spin 4000ms linear infinite;
+  -moz-animation: spin 4000ms linear infinite;
 }
 
 section div.circle.Home {
@@ -73,14 +76,64 @@ section div.circle.Sustainability {
   background-color: #a5cf6f;
 }
 section div.circle.Music {
-  background-color: #f2994a;
+  background: linear-gradient(45deg, #000, #000 100%),
+    linear-gradient(135deg, #f2994a, #f2994a),
+    linear-gradient(225deg, #f2994a, #f2994a),
+    linear-gradient(225deg, #000, #000);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: #f2994a; */
 }
 section div.circle.Digital {
-  background-color: #9b51e0;
+  background: linear-gradient(45deg, #000, #000 100%),
+    linear-gradient(135deg, #9b51e0, #9b51e0),
+    linear-gradient(225deg, #9b51e0, #9b51e0),
+    linear-gradient(225deg, #000, #000);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: #9b51e0; */
 }
 
 /*==============
-* Media Queries 
+/* * Animations
+====================================*/
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*==============
+/* * Media Queries 
 ====================================*/
 
 @media screen and (min-width: 1024px) {
