@@ -4,14 +4,14 @@ exports.pages = [
         {
             return 'is a Texas based \nSoftware Engineer & Creative Generalist'
         },
-        pageTitle: 'Home',
+        medium: 'Home',
         color: '#fff',
     },
     {   highlight: 'porcelain objects',
         get statement(){
             return 'is working on '
         },
-        pageTitle: 'Art',
+        medium: 'Art',
         color: '#000',
     },
     {   
@@ -19,23 +19,23 @@ exports.pages = [
         get statement() {
             return 'just made a new playlist.'
         },
-        pageTitle: 'Music',
+        medium: 'Music',
         color: '#f2994a',
     },
     {   highlight: 'plastic objects',
         get statement() {
             return 'is curious about'
         },
-        pageTitle: 'Sustainability',
+        medium: 'Sustainability',
         color: '#a5cf6f',
     },
     {   
-        highlight: 'BBCA',
+        highlight: 'Black Buddha',
         get statement() {
             return `is building a new website for`
 
         },
-        pageTitle: 'Digital',
+        medium: 'Digital',
         color: '#9b51e0',
     },
 ]

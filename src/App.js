@@ -13,6 +13,9 @@ class App extends Component {
 
   handleNextClick = () => {
     let activePageNumber = this.state.activePageNumber + 1
+    if (activePageNumber > pages.length - 1) {
+      activePageNumber = 0
+    }
     this.setState({
       activePageNumber
     })
@@ -39,11 +42,11 @@ class App extends Component {
 
   render() { 
     const page = this.state.pages[`${this.state.activePageNumber}`]
-    const {statement, pageTitle, color, highlight} = page
+    const {statement, medium, color, highlight} = page
     return ( 
       <div className="App">
         <section>
-          <div className={`circle ${pageTitle}`}>{pageTitle === 'Home' ? null : pageTitle.slice(0,1)}</div>
+          <div className={`circle ${medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
           <h1>Gideon Ibemere, Jr</h1>
           
           <Statement 
@@ -53,9 +56,9 @@ class App extends Component {
           />
         </section>
         <Footer 
-        handleNextClick={this.handleNextClick} handlePreviousClick={this.handlePreviousClick}
-         handleRandomClick={this.handlePreviousClick}
-        
+        handleNextClick={this.handleNextClick} 
+        handlePreviousClick={this.handlePreviousClick}
+        handleRandomClick={this.handlePreviousClick}
         />
 
       </div>
