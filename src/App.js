@@ -6,7 +6,7 @@ import './App.css';
 class App extends Component {
   state = {
     statement: `is a Texas based \nSoftware Engineer & Creative Generalist`,
-    page: 'Digital'
+    page: 'Sustainability'
    }
   render() { 
     return ( 
