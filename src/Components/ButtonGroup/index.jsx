@@ -4,12 +4,13 @@ import {Previous, Next, Random } from '../Buttons'
 
 
 
-const ButtonGroup = (props) => {
+const ButtonGroup = ({handlePreviousClick, handleRandomClick, handleNextClick}) => {
     return ( 
+
         <>
-        <Previous />
-        <Random />
-        <Next />
+        <Previous handleClick={handlePreviousClick}/>
+        <Random handleClick={handleRandomClick}/>
+        <Next handleClick={handleNextClick}/>
         </>
         
      );

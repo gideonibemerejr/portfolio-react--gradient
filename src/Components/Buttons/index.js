@@ -3,8 +3,8 @@ import previous from '../../assets/prev.svg'
 import next from '../../assets/next.svg'
 import random from '../../assets/random.svg'
 
-const Previous = () => {
-    return ( <img className="previous" src={previous} alt="Previous"/> );
+const Previous = ({handleClick}) => {
+    return ( <img onClick={handleClick}className="previous" src={previous} alt="Previous"/> );
 }
  
 const Next = () => {
