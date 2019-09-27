@@ -1,5 +1,4 @@
 body {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -43,6 +42,7 @@ section {
   align-items: center;
 }
 .App {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 
