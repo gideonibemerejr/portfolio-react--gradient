@@ -1,6 +1,8 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
+
 .App {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,6 @@ body {
   align-items: center;
   height: 100vh;
 
-  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   -webkit-font-smoothing: antialiased;
@@ -18,12 +19,12 @@ body {
   line-height: 1.25;
   background-color: #fff;
   color: #000;
+  transition: background-color 1s;
+  
 }
 
-.App.dark-mode {
-  background-color: #000;
-  color: rgba(255, 255, 255, .8);
-}
+
+
 
 h1 {
   font-size: 1.5em;
@@ -42,7 +43,27 @@ h2 > a {
   display: inline-block;
 }
 
+
+
 header {
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  transition: background-color 1s;
+  
+}
+
+header svg {
+  z-index: 10;
+  margin: 1rem
+}
+
+header svg:hover {
+  cursor: pointer;
+}
+div.title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,14 +71,18 @@ header {
 
 section {
   width: 80%;
+  
   z-index: 10;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.dark-mode {
+  background-color: #000;
+  color: rgba(255, 255, 255, .8);
+  transition: background-color 1s;
+}
 div.circle {
   text-align: center;
   color: #fff;
