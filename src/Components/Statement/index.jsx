@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Statement = ({statement, highlight, color, handleMouseOver, link}) => {
-   
+const Statement = ({statement, highlight, color, handleMouseOver, link, isDarkMode}) => {
+   console.log(isDarkMode, color)
        if (highlight) {
         return (
             <h2>
@@ -9,7 +9,7 @@ const Statement = ({statement, highlight, color, handleMouseOver, link}) => {
             <a 
             onMouseOver={handleMouseOver} 
             href={link ? `${link}` : '#'} 
-            style={{ borderBottom: `${color} 5px solid`, paddingBottom: '.07em'}}
+            style={{ borderBottom: `${isDarkMode && color === '#000' ? '#fff' : color} 5px solid`, paddingBottom: '.07em'}}
             target="_blank"
             rel="noreferrer noopener"
             >

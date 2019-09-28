@@ -9,10 +9,16 @@ class App extends Component {
   state = {
     pages: pages,
     activePageNumber: 0,
-    isDarkMode: true,
+    isDarkMode: false,
     
   }
   
+  handleDarkModeClick = () => {
+    let isDarkMode = !this.state.isDarkMode
+    this.setState({
+      isDarkMode
+      })
+  }
   
   handleNextClick = () => {
     let activePageNumber = this.state.activePageNumber + 1
@@ -76,17 +82,20 @@ class App extends Component {
     const {statement, medium, color, highlight, link} = page
     return ( 
       <div id="App" className={this.state.isDarkMode ? 'App dark-mode' : 'App'}>
-        
         <header> 
-        <div className={`circle ${medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
-          <h1>Gideon Ibemere, Jr</h1>
         </header>
+        <div className="title"> 
+
+        <div className={`circle ${this.state.isDarkMode ? medium + ' dark-mode' : medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
+          <h1>Gideon Ibemere, Jr</h1>
+        </div>
         <section>
           <Statement 
           highlight={highlight}
           statement={statement} 
           color={color}
           link={link}
+          {...this.state}
           />
         </section>
         <Footer 

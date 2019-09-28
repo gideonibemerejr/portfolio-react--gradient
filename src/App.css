@@ -22,7 +22,7 @@ body {
 
 .App.dark-mode {
   background-color: #000;
-  color: #fff;
+  color: rgba(255, 255, 255, .8);
 }
 
 h1 {
@@ -50,6 +50,7 @@ header {
 
 section {
   width: 80%;
+  z-index: 10;
 
   display: flex;
   flex-direction: column;
@@ -84,6 +85,10 @@ div.circle.Home {
 
 div.circle.Art {
   background-color: #000;
+}
+div.circle.Art.dark-mode {
+  background-color: #fff;
+  color: #000;
 }
 div.circle.Sustainability {
   background-color: #a5cf6f;

@@ -1,5 +1,5 @@
 const grained = (ele, opt) => {
-    console.log('Working')
+    
     var element = null,
       elementId = null,
       selectorElement = null

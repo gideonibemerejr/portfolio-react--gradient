@@ -32,7 +32,7 @@ exports.pages = [
     {   
         highlight: 'Black Buddha',
         get statement() {
-            return `is building a new website for`
+            return 'is building a new website for '
 
         },
         medium: 'Digital',
@@ -41,7 +41,7 @@ exports.pages = [
     {   
         highlight: 'Download PDF',
         get statement() {
-            return `created a new resume. `
+            return 'created a new resume. '
 
         },
         medium: 'Home',
