@@ -1,5 +1,3 @@
-import grained from './grained.js'
+import { grained, removeGrained } from './grained'
 
-export {
-    grained
-}
+export { grained, removeGrained }

@@ -20,11 +20,8 @@ body {
   background-color: #fff;
   color: #000;
   transition: background-color 1s;
-  
+  transition: color 1s;
 }
-
-
-
 
 h1 {
   font-size: 1.5em;
@@ -43,8 +40,6 @@ h2 > a {
   display: inline-block;
 }
 
-
-
 header {
   background-color: #fff;
   top: 0;
@@ -52,12 +47,12 @@ header {
   display: flex;
   flex-direction: row-reverse;
   transition: background-color 1s;
-  
+  transition: color 1s;
 }
 
 header svg {
   z-index: 10;
-  margin: 1rem
+  margin: 1rem;
 }
 
 header svg:hover {
@@ -71,7 +66,7 @@ div.title {
 
 section {
   width: 80%;
-  
+
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -80,8 +75,9 @@ section {
 }
 .dark-mode {
   background-color: #000;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, 0.8);
   transition: background-color 1s;
+  transition: color 1s;
 }
 div.circle {
   text-align: center;
