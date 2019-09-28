@@ -38,6 +38,20 @@ class App extends Component {
   this.setState({activePageNumber})
   }
 
+  componentDidMount() {
+    document.addEventListener('keyup', event => {
+      
+      if (event.key === 'ArrowRight') {
+
+        this.handleNextClick()
+      }
+      if (event.key === 'ArrowLeft') {
+
+        this.handlePreviousClick()
+      }
+    })
+
+  }
 
 
   render() { 

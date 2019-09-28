@@ -2,7 +2,7 @@ exports.pages = [
     {   
         get statement()
         {
-            return 'is a Texas based \nSoftware Engineer & Creative Generalist'
+            return 'is a Texas based Software Engineer & Creative Generalist'
         },
         medium: 'Home',
         color: '#fff',
@@ -36,6 +36,15 @@ exports.pages = [
 
         },
         medium: 'Digital',
+        color: '#9b51e0',
+    },
+    {   
+        highlight: 'download s',
+        get statement() {
+            return `has a resume if you want to`
+
+        },
+        medium: 'Home',
         color: '#9b51e0',
     },
 ]
