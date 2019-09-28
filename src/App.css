@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -13,15 +16,10 @@
 
   font-size: 16px;
   line-height: 1.25;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }
 
-
-.App.dark-mode {
-  background-color: #090890;
-  color: 
-}
 h1 {
   font-size: 1.5em;
   margin: 1em 0 1em 0;
@@ -38,9 +36,12 @@ h2 > a {
   color: inherit;
   display: inline-block;
 }
-
+header {
+  display: flex;
+  flex-di
+}
 section {
-  position: fixed;
+  
   width: 100%;
 
   display: flex;
@@ -49,7 +50,7 @@ section {
   align-items: center;
 }
 
-section div.circle {
+div.circle {
   text-align: center;
   color: #fff;
   padding: 5px;
@@ -61,7 +62,7 @@ section div.circle {
   background-color: #999;
 }
 
-section div.circle.Home {
+div.circle.Home {
   background: linear-gradient(45deg, #000, #000 100%),
     linear-gradient(135deg, #a5cf6f, #a5cf6f),
     linear-gradient(225deg, #9b51e0, #9b51e0),

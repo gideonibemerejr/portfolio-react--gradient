@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Statement from './Components/Statement'
 import { Footer } from "./Layout"
 import { pages } from './data'
-
+import { grained } from './utils'
 import './App.css';
 
 class App extends Component {
@@ -11,8 +11,8 @@ class App extends Component {
     activePageNumber: 0,
     
   }
-
-
+  
+  
   handleNextClick = () => {
     let activePageNumber = this.state.activePageNumber + 1
     if (activePageNumber > pages.length - 1) {
@@ -53,6 +53,17 @@ class App extends Component {
       }
     })
 
+    const options = {
+      animate: true,
+      patternWidth: 485.5,
+      patternHeight: 485.5,
+      grainOpacity: 0.1,
+      grainDensity: 1,
+      grainWidth: 1,
+      grainHeight: 1
+    }
+   
+   grained('#App', options)
   }
 
 
@@ -60,11 +71,13 @@ class App extends Component {
     const page = this.state.pages[`${this.state.activePageNumber}`]
     const {statement, medium, color, highlight, link} = page
     return ( 
-      <div className="App">
-        <section>
-          <div className={`circle ${medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
+      <div id="App" className="App">
+        
+        <header> 
+        <div className={`circle ${medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
           <h1>Gideon Ibemere, Jr</h1>
-          
+        </header>
+        <section>
           <Statement 
           highlight={highlight}
           statement={statement} 
