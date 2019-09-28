@@ -10,10 +10,10 @@ footer {
   align-items: center;
 }
 
-footer img {
+footer svg {
   margin: 0 0.75em 0 0.75em;
 }
 
-footer img:hover {
+footer svg:hover {
   cursor: pointer;
 }

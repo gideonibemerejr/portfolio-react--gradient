@@ -9,6 +9,7 @@ class App extends Component {
   state = {
     pages: pages,
     activePageNumber: 0,
+    isDarkMode: true,
     
   }
   
@@ -62,8 +63,11 @@ class App extends Component {
       grainWidth: 1,
       grainHeight: 1
     }
-   
-   grained('#App', options)
+    if (this.state.isDarkMode) {
+      grained('#App', options)
+    } else {
+      return
+    }
   }
 
 
@@ -71,7 +75,7 @@ class App extends Component {
     const page = this.state.pages[`${this.state.activePageNumber}`]
     const {statement, medium, color, highlight, link} = page
     return ( 
-      <div id="App" className="App">
+      <div id="App" className={this.state.isDarkMode ? 'App dark-mode' : 'App'}>
         
         <header> 
         <div className={`circle ${medium}`}>{medium === 'Home' ? null : medium.slice(0,1)}</div>
@@ -86,6 +90,7 @@ class App extends Component {
           />
         </section>
         <Footer 
+        isDarkMode={this.state.isDarkMode}
         handleNextClick={this.handleNextClick} 
         handlePreviousClick={this.handlePreviousClick}
         handleRandomClick={this.handleRandomClick}

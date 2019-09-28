@@ -16,6 +16,11 @@ body {
 
   font-size: 16px;
   line-height: 1.25;
+  background-color: #fff;
+  color: #000;
+}
+
+.App.dark-mode {
   background-color: #000;
   color: #fff;
 }
@@ -36,13 +41,15 @@ h2 > a {
   color: inherit;
   display: inline-block;
 }
+
 header {
   display: flex;
-  flex-di
+  flex-direction: column;
+  align-items: center;
 }
+
 section {
-  
-  width: 100%;
+  width: 80%;
 
   display: flex;
   flex-direction: column;
@@ -75,16 +82,16 @@ div.circle.Home {
   -moz-animation: spin 3000ms linear infinite;
 }
 
-section div.circle.Art {
+div.circle.Art {
   background-color: #000;
 }
-section div.circle.Sustainability {
+div.circle.Sustainability {
   background-color: #a5cf6f;
 }
-section div.circle.Music {
+div.circle.Music {
   background-color: #f2994a;
 }
-section div.circle.Digital {
+div.circle.Digital {
   background-color: #9b51e0;
 }
 
