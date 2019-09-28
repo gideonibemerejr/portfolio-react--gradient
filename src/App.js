@@ -58,7 +58,7 @@ class App extends Component {
         <Footer 
         handleNextClick={this.handleNextClick} 
         handlePreviousClick={this.handlePreviousClick}
-        handleRandomClick={this.handlePreviousClick}
+        handleRandomClick={this.handleRandomClick}
         />
 
       </div>
