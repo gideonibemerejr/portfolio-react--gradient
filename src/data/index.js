@@ -17,14 +17,14 @@ exports.pages = [
     {   
         highlight: 'Listen',
         get statement() {
-            return 'just made a new playlist.'
+            return 'just made a new playlist. '
         },
         medium: 'Music',
         color: '#f2994a',
     },
     {   highlight: 'plastic objects',
         get statement() {
-            return 'is curious about'
+            return 'is curious about '
         },
         medium: 'Sustainability',
         color: '#a5cf6f',
@@ -39,13 +39,14 @@ exports.pages = [
         color: '#9b51e0',
     },
     {   
-        highlight: 'download s',
+        highlight: 'Download PDF',
         get statement() {
-            return `has a resume if you want to`
+            return `created a new resume. `
 
         },
         medium: 'Home',
         color: '#9b51e0',
+        link: '/resume.pdf'
     },
 ]
 

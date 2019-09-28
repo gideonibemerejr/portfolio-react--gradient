@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Statement from './Components/Statement'
 import { Footer } from "./Layout"
-import {pages} from './data'
+import { pages } from './data'
+
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     activePageNumber: 0,
     
   }
+
 
   handleNextClick = () => {
     let activePageNumber = this.state.activePageNumber + 1
@@ -56,7 +58,7 @@ class App extends Component {
 
   render() { 
     const page = this.state.pages[`${this.state.activePageNumber}`]
-    const {statement, medium, color, highlight} = page
+    const {statement, medium, color, highlight, link} = page
     return ( 
       <div className="App">
         <section>
@@ -67,6 +69,7 @@ class App extends Component {
           highlight={highlight}
           statement={statement} 
           color={color}
+          link={link}
           />
         </section>
         <Footer 
