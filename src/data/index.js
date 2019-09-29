@@ -13,6 +13,7 @@ exports.pages = [
         },
         medium: 'Art',
         color: '#000',
+        link: 'https://www.gideon-ibemere.tumblr.com/tagged/Artwork'
     },
     {   
         highlight: 'Listen',
@@ -21,6 +22,7 @@ exports.pages = [
         },
         medium: 'Music',
         color: '#f2994a',
+        link: 'https://linktr.ee/gideonibemerejr'
     },
     {   highlight: 'plastic objects',
         get statement() {
@@ -28,6 +30,7 @@ exports.pages = [
         },
         medium: 'Sustainability',
         color: '#a5cf6f',
+        link: 'https://www.preciousplastic.com'
     },
     {   
         highlight: 'Black Buddha',
@@ -37,6 +40,7 @@ exports.pages = [
         },
         medium: 'Digital',
         color: '#9b51e0',
+        link: 'https://www.bbca-draft.netlify.com'
     },
     {   
         highlight: 'Download PDF',
