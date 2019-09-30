@@ -40,7 +40,7 @@ exports.pages = [
         },
         medium: 'Digital',
         color: '#9b51e0',
-        link: 'https://www.bbca-draft.netlify.com'
+        link: 'https://bbca-draft.netlify.com'
     },
     {   
         highlight: 'Download PDF',
