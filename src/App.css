@@ -6,7 +6,7 @@ body {
 .App {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 75vh auto;
+  grid-template-rows: 85vh auto;
   justify-items: center;
   align-items: center;
   height: 100vh;
@@ -60,19 +60,14 @@ header svg {
 header svg:hover {
   cursor: pointer;
 }
-div.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 section {
-  width: 80%;
+  width: 70%;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
+  grid-template-rows: 0.25fr 0.25fr 20vmax;
 }
 .dark-mode {
   background-color: #000;
@@ -162,10 +157,19 @@ div.circle.Digital {
 /* * Media Queries 
 ====================================*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   section {
-    width: 70%;
+    width: 80%;
     margin: 0 1rem 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  h2 {
+    font-size: 6vmin;
+  }
+  section {
+    grid-template-rows: 0.25fr 0.25fr 25vmax;
   }
 }
 @media screen and (max-width: 600px) {
