@@ -134,6 +134,7 @@ class App extends Component {
           className={this.state.isDarkMode ? 'App dark-mode' : 'App'}
         >
           <div className='title'>
+            <div>
             <div
               className={`circle ${
                 this.state.isDarkMode ? medium + ' dark-mode' : medium
@@ -141,9 +142,11 @@ class App extends Component {
             >
               {medium === 'Home' ? null : medium.slice(0, 1)}
             </div>
+            </div>
             <h1>Gideon Ibemere, Jr</h1>
           </div>
           <section>
+        
             <Statement
               highlight={highlight}
               statement={statement}
@@ -152,6 +155,7 @@ class App extends Component {
               {...this.state}
             />
           </section>
+          
           <Footer
             isDarkMode={this.state.isDarkMode}
             handleNextClick={this.handleNextClick}
@@ -159,6 +163,7 @@ class App extends Component {
             handleRandomClick={this.handleRandomClick}
           />
         </div>
+        
       </>
     )
   }

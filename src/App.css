@@ -143,10 +143,10 @@ div.circle.Digital {
   }
 }
 @-webkit-keyframes spin {
-  from {
+  0% {
     -webkit-transform: rotate(0deg);
   }
-  to {
+  100% {
     -webkit-transform: rotate(359deg);
   }
 }
@@ -172,5 +172,19 @@ div.circle.Digital {
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+  @media {
+    div.circle.Home {
+      background: linear-gradient(45deg, #000, #000 100%),
+        linear-gradient(135deg, #a5cf6f, #a5cf6f),
+        linear-gradient(225deg, #9b51e0, #9b51e0),
+        linear-gradient(225deg, #f2994a, #f2994a);
+      background-size: 50% 50%;
+      background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+      background-repeat: no-repeat;
+    }
   }
 }
