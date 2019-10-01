@@ -22,7 +22,7 @@ exports.pages = [
         },
         medium: 'Music',
         color: '#f2994a',
-        link: 'https://linktr.ee/gideonibemerejr'
+        link: 'https://lnkfi.re/IVUR784B'
     },
     {   highlight: 'plastic objects',
         get statement() {
