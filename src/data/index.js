@@ -22,7 +22,7 @@ exports.pages = [
         },
         medium: 'Music',
         color: '#f2994a',
-        link: 'https://lnkfi.re/IVUR784B'
+        link: 'https://lnkfi.re/ArQWsNGS'
     },
     {   highlight: 'plastic objects',
         get statement() {
