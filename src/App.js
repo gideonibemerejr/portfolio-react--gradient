@@ -133,20 +133,21 @@ class App extends Component {
           id='App'
           className={this.state.isDarkMode ? 'App dark-mode' : 'App'}
         >
-          <div className='title'>
+          {/* <div className='title'>
             <div>
-            <div
+            
+            </div>
+           
+          </div> */}
+          <section>
+          <div
               className={`circle ${
                 this.state.isDarkMode ? medium + ' dark-mode' : medium
               }`}
             >
               {medium === 'Home' ? null : medium.slice(0, 1)}
             </div>
-            </div>
             <h1>Gideon Ibemere, Jr</h1>
-          </div>
-          <section>
-        
             <Statement
               highlight={highlight}
               statement={statement}
