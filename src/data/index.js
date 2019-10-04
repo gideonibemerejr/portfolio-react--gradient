@@ -43,14 +43,14 @@ exports.pages = [
         link: 'https://bbca-draft.netlify.com'
     },
     {   
-        highlight: 'Download PDF',
+        highlight: 'Send an email',
         get statement() {
-            return 'created a new resume. '
+            return 'is accepting new project. '
 
         },
         medium: 'Home',
         color: '#9b51e0',
-        link: '/resume.pdf'
+        link: 'mailto:g@gideonjr.com'
     },
 ]
 
