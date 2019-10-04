@@ -73,7 +73,7 @@ class App extends Component {
     animate: true,
     patternWidth: 485.5,
     patternHeight: 485.5,
-    grainOpacity: 0.12,
+    grainOpacity: 0.15,
     grainDensity: 1,
     grainWidth: 1,
     grainHeight: 1
